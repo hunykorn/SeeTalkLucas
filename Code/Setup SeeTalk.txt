@@ -1,0 +1,39 @@
+1. Dans le fichier httpd-vhosts.conf (C:\xampp\apache\conf\extra\httpd-vhosts.conf) ajouter :
+
+<VirtualHost *>
+	DocumentRoot "C:\xampp\htdocs\SeeTalk\Code\SeeTalk\public"
+	ServerName seetalk.lan
+	
+	ErrorLog "C:\xampp\apache\logs\SeeTalk_error_log"
+	CustomLog "C:\xampp\apache\logs\SeeTalk_access_log" common
+	
+	<Directory "\xampp\htdocs\SeeTalk\Code\SeeTalk\public">
+		Order allow,deny
+		Allow from all
+		AllowOverride All
+		Require all granted
+	</Directory>
+	
+</VirtualHost>
+
+---------------------------------------
+
+2. Dans le fichier hosts (C:\Windows\System32\drivers\etc\hosts) : 
+
+127.0.0.1 	seetalk.lan 		seetalk
+
+---------------------------------------
+
+3. Copier le repo "SeeTalk" et le coller dans le dossier htdocs (C:\xampp\htdocs)
+
+---------------------------------------
+
+Setup sur le serveur du lycée
+
+1. Copiez le dossier /var/www sur la VM
+
+2. Activer mod_rewrite "a2enmod rewrite"
+
+3. Remplacer "/etc/apache2/sites-available/000-default.conf" par celui du dossier
+
+4. Se placer dans le dossier "/var/www" et éxecuter "chmod -R 755 writable/" "chown -R www-data:www-data writable/" puis "service apache2 restart"

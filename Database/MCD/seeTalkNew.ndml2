@@ -1,0 +1,1077 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": true
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "default",
+  "server": {
+    "objectType": "Server_LOGICAL",
+    "name": "Default",
+    "schemas": [
+      {
+        "objectType": "Schema_LOGICAL",
+        "name": "default",
+        "tables": [
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "ACTUALITE",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_actu",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_actu"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "name_actu",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "name_actu"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "message_actu",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "message_actu"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "theme_actu",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "theme_actu"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_actu"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "REUNION",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "nom_reunion",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "nom_reunion"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "explication_reunion",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "explication_reunion"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "heure_reunion",
+                "type": "TIME",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "heure_reunion"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "jour_reunion",
+                "type": "DATE",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "jour_reunion"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_reunion",
+                "type": "INTEGER",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_reunion"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_reunion"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "VISIO_GROUP",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "temps_reunion",
+                "type": "TIME",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "temps_reunion"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "personnes",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "personnes"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "date",
+                "type": "DATE",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "date"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_group_visio",
+                "type": "INTEGER",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_group_visio"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_group_visio"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "GROUP",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_group",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_group"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "group_name",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "group_name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "group_users",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "group_users"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "group_pass",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "group_pass"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "UTILISER",
+                "fields": [
+                  "id_group"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "GROUP_MSG",
+                "referencedFields": [
+                  "id_message"
+                ],
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneOrManyRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "APELLER",
+                "fields": [
+                  "id_group"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "VISIO_GROUP",
+                "referencedFields": [
+                  "id_group_visio"
+                ],
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_group"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "GROUP_MSG",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "message_text",
+                "type": "CHAR VARYING",
+                "length": 1024,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "message_text"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "message_date",
+                "type": "DATE",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "message_date"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "message_readBy",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "message_readBy"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_message",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_message"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_message"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Historique Appels",
+            "comment": "",
+            "oldName": "",
+            "fields": [],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": []
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Historique Messages",
+            "comment": "",
+            "oldName": "",
+            "fields": [],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": []
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Groupe Appel",
+            "comment": "",
+            "oldName": "",
+            "fields": [],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": []
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Appel Video",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "date",
+                "type": "DATE",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "date"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "temps_reunion",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "temps_reunion"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_appel",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_appel"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "APPEL_GROUPE",
+                "fields": [
+                  "id_appel"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "UTILISATEUR",
+                "referencedFields": [
+                  "id_user"
+                ],
+                "sourceCardinality": "OneOrManyRelationship",
+                "targetCardinality": "OneOrManyRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "APPEL",
+                "fields": [
+                  "id_appel"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "Groupe Appel",
+                "referencedFields": [
+                  "id_appel"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_appel"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "UTILISATEUR",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "grade_user",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "grade_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_user",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "pseudo_user",
+                "type": "CHAR VARYING",
+                "length": 24,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "pseudo_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "mail_user",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "mail_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "password_user",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "password_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "socity_user",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "socity_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "bio_user",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "bio_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "contact_user",
+                "type": "CHAR VARYING",
+                "length": 1024,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "contact_user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "img_user",
+                "type": "CHAR VARYING",
+                "length": 1024,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "img_user"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "ENVOYER_MESSAGE",
+                "fields": [
+                  "id_user"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "Message",
+                "referencedFields": [
+                  "id_message"
+                ],
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneOrManyRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "APPEL_GROUPE Copy 1",
+                "fields": [
+                  "id_user"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "Groupe Appel",
+                "referencedFields": [
+                  "id_user"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "CREER",
+                "fields": [
+                  "id_user"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "REUNION",
+                "referencedFields": [
+                  "id_reunion"
+                ],
+                "sourceCardinality": "OneOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_user"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Message",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "message_text",
+                "type": "CHAR VARYING",
+                "length": 1024,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "message_text"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "message_date",
+                "type": "DATE",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "message_date"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "message_read",
+                "type": "BIT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "0",
+                "comment": "",
+                "oldName": "message_read"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_message",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_message"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "RECEVOIR_MESSAGE",
+                "fields": [
+                  "id_message"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "UTILISATEUR",
+                "referencedFields": [
+                  "id_user"
+                ],
+                "sourceCardinality": "OneOrManyRelationship",
+                "targetCardinality": "OneOrManyRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_message"
+              ],
+              "oldName": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Arial Unicode MS",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "default",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "default",
+          "tableName": "UTILISATEUR",
+          "x": 460,
+          "y": 590,
+          "width": 260,
+          "height": 240,
+          "isBold": false,
+          "titleColor": {
+            "r": 251,
+            "g": 56,
+            "b": 65,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "default",
+          "tableName": "Message",
+          "x": 70,
+          "y": 600,
+          "width": 200,
+          "height": 200,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "default",
+          "tableName": "Appel Video",
+          "x": 490,
+          "y": 250,
+          "width": 200,
+          "height": 200,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "default",
+          "tableName": "ACTUALITE",
+          "x": 90,
+          "y": 990,
+          "width": 200,
+          "height": 200,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "default",
+          "tableName": "REUNION",
+          "x": 490,
+          "y": 970,
+          "width": 200,
+          "height": 200,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "label",
+          "name": "Label 1",
+          "x": 290,
+          "y": 640,
+          "width": 144,
+          "height": 30,
+          "text": "ENVOYER_MESSAGE",
+          "fontName": "Arial Unicode MS",
+          "fontSize": 14,
+          "isFontBold": false,
+          "isFontItalic": false
+        },
+        {
+          "type": "label",
+          "name": "Label 1 Copy 1",
+          "x": 290,
+          "y": 750,
+          "width": 147,
+          "height": 30,
+          "text": "RECEVOIR_MESSAGE",
+          "fontName": "Arial Unicode MS",
+          "fontSize": 14,
+          "isFontBold": false,
+          "isFontItalic": false
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "CREER",
+          "sourceTableName": "UTILISATEUR",
+          "sourceSchemaName": "default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 590,
+              "y": 845
+            },
+            {
+              "x": 590,
+              "y": 799
+            },
+            {
+              "x": 590,
+              "y": 799
+            },
+            {
+              "x": 590,
+              "y": 955
+            }
+          ],
+          "label": {
+            "x": 610,
+            "y": 885,
+            "width": 51,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 255,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": true
+          }
+        },
+        {
+          "name": "APPEL_GROUPE",
+          "sourceTableName": "Appel Video",
+          "sourceSchemaName": "default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 590,
+              "y": 465
+            },
+            {
+              "x": 590,
+              "y": 540
+            },
+            {
+              "x": 590,
+              "y": 540
+            },
+            {
+              "x": 590,
+              "y": 575
+            }
+          ],
+          "label": {
+            "x": 598,
+            "y": 455,
+            "width": 111,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "ENVOYER_MESSAGE",
+          "sourceTableName": "UTILISATEUR",
+          "sourceSchemaName": "default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 445,
+              "y": 690
+            },
+            {
+              "x": 365,
+              "y": 690
+            },
+            {
+              "x": 365,
+              "y": 680
+            },
+            {
+              "x": 285,
+              "y": 680
+            }
+          ],
+          "label": {
+            "x": 311,
+            "y": 652,
+            "width": 144,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "RECEVOIR_MESSAGE",
+          "sourceTableName": "Message",
+          "sourceSchemaName": "default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 285,
+              "y": 730
+            },
+            {
+              "x": 365,
+              "y": 730
+            },
+            {
+              "x": 365,
+              "y": 740
+            },
+            {
+              "x": 445,
+              "y": 740
+            }
+          ],
+          "label": {
+            "x": 275,
+            "y": 692,
+            "width": 147,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}
