@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://172.28.36.21';
+    public $baseURL = 'https://localux.alwaysdata.net/';
 
     /**
      * --------------------------------------------------------------------------

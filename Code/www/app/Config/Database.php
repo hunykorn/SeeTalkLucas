@@ -72,7 +72,7 @@ class Database extends Config
 
         'password' => 'Btssio82300',
 
-        'database' => 'seetalk_bdd',
+        'database' => 'seetalk_lucas',
 
         'DBDriver' => 'MySQLi',
 
